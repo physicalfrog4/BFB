@@ -1,26 +1,64 @@
 import React from "react";
-import {ImgWrap, InfoContainer, InfoWrapper, InfoRow, Column1, Column2, TextWrapper, TopLine, Heading, Subtitle, BtnWrap, Img } from "./infoElements";
-import { Button } from "../ButtonElement";
-const InfoSection = () => {
+import {
+  ImgWrap,
+  InfoContainer,
+  InfoWrapper,
+  InfoRow,
+  Column1,
+  Column2,
+  TextWrapper,
+  TopLine,
+  Heading,
+  Subtitle,
+  BtnWrap,
+  Img,
+} from "./infoElements";
+import { Button } from "../ButtonElements";
+const InfoSection = ({
+  lightBg,
+  id,
+  imgStart,
+  lightText,
+  headLine,
+  darkText,
+  description,
+  buttonLabel,
+  naviLink,
+  img,
+  alt,
+  topLine,primary,dark,dark2
+}) => {
   return (
     <>
-      <InfoContainer>
+      <InfoContainer lightBg={lightBg} id={id}>
         <InfoWrapper>
-          <InfoRow>
+          <InfoRow imgStart={imgStart}>
             <Column1>
               <TextWrapper>
-                <TopLine>
-                  TopLine<Heading> Heading</Heading>
-                  <Subtitle>Subtitle</Subtitle>
-                  <BtnWrap>
-                    <Button to="home"/>
-                  </BtnWrap>
-                </TopLine>
+                <TopLine>{topLine}</TopLine>
+                <Heading lightText={lightText}>{headLine}</Heading>
+                <BtnWrap>
+                  <Button
+                  
+                    smooth={true}
+                    duration={500}
+                    spy={true}
+                    exact="true"
+                    offset={-80}
+                    primary={primary ? 1 : 0}
+                    dark={dark ? 1 : 0}
+                    dark2={dark2 ? 1 : 0}
+                  >
+                    {buttonLabel}
+                  </Button>
+                </BtnWrap>
               </TextWrapper>
             </Column1>
             <Column2>
-            <ImgWrap> <Img />
-            </ImgWrap>
+              <ImgWrap>
+                {" "}
+                <Img src={img} alt={alt} />
+              </ImgWrap>
             </Column2>
           </InfoRow>
         </InfoWrapper>
