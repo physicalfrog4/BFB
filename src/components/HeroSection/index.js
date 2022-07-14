@@ -9,7 +9,7 @@ import {
   ArrowForward,
   ArrowRight,
 } from "./HeroElements";
-import { Button } from "../ButtonElement";
+import { Button } from "../ButtonElements";
 const HeroSection = () => {
   const [hover, setHover] = useState(false);
   const onHover = () => {
@@ -30,7 +30,7 @@ const HeroSection = () => {
               onMouseLeave={onHover}
               primary="true" dark="true">
               Get Started
-              {hover ? <ArrowForward /> : <ArrowRight />};
+              {hover ? <ArrowForward /> : <ArrowRight />}
             </Button>
           </HeroBtnWrapper>
         </HeroContent>
