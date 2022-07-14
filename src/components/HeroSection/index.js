@@ -30,7 +30,7 @@ const HeroSection = () => {
               onMouseLeave={onHover}
               primary="true" dark="true">
               Get Started
-              {hover ? <ArrowForward /> : <ArrowRight />};
+              {hover ? <ArrowForward /> : <ArrowRight />}
             </Button>
           </HeroBtnWrapper>
         </HeroContent>

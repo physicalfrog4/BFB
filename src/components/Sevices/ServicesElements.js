@@ -9,10 +9,10 @@ export const ServicesContainer = styled.div`
   background: #f3eee8;
 
   @media screen and max(max-width: 768px) {
-    hieght: 1100px;
+    height: 1100px;
   }
   @media screen and max(max-width: 480px) {
-    hieght: 1300px;
+    height: 1300px;
   }
 `;
 
@@ -36,6 +36,7 @@ padding: 0 50px;
 export const ServicesCard = styled.div`
   background: #fff;
   display: flex;
+  min-width: 300px;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;

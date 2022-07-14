@@ -34,7 +34,7 @@ align-items: center;
 `;
 
 export const HeroH1 = styled.h1`
-color: '#fcb900';
+color: #fcb900;
 font-size: 48px;
 text-align: center;
 
@@ -51,11 +51,11 @@ text-align: center;
 
 export const HeroP = styled.p`
 margin-top: 24px;
-color: '#fcb900';
-text-align: cneter;
+color: #644117;
+text-align: center;
 max-width: 600px;
 @media screen and (maz-width: 768px){
-    font-size: 24px;
+    font-size: 30px;
 
 }
 

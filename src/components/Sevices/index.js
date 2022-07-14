@@ -1,7 +1,7 @@
 import React from "react";
-import Icon1 from '../../images/teamUp.png';
-import Icon2 from '../../images/teamUp.png';
-import Icon3 from '../../images/teamUp.png';
+import Icon1 from '../../images/coolDude.png';
+import Icon2 from '../../images/chat.png';
+import Icon3 from '../../images/truck.png';
 import { ServicesContainer,ServicesH1,ServicesWrapper,ServicesCard,ServicesIcon,ServicesH2,ServicesP } from "./ServicesElements";
 const Services = () => {
   return (

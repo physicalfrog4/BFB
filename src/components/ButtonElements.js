@@ -4,10 +4,10 @@ import {Link as LinkR} from 'react-router-dom';
 
 export const Button =styled(LinkR)`
 border-radius: 50px;
-background: ${({primary}) => (primary ? '#01BF71' : '#010606')};
+background: ${({primary}) => (primary ? '#FCB900' : '#010606')};
 white-space: nowrap;
 padding: ${({big}) => (big ? '14px 48px' : '12px 30px')};
-color: ${({dark}) => (dark ? '#fcb900' : '#fff')};
+color: ${({dark}) => (dark ? '#644117' : '#fcb900')};
 font-size: ${({fontBig}) => (fontBig ? '20px' : '16px')};
 Link: ${({skillRequest}) => skillRequest ? "./skillRequest" : "./buddy"};
 outline: none;

@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import {Link as LinkR} from 'react-router-dom';
 
 export const InfoContainer = styled.div`
 background: #F3EEE8;
@@ -60,7 +59,7 @@ export const TextWrapper = styled.div`
 
 export const TopLine = styled.p`
 
-color: '#ffb500';
+color: #ffb500;
 font-size: 16px;
 line-height: 70px;
 font-weight: 700;
@@ -78,7 +77,7 @@ font-weight: 600;
 letter-spacing: 1.4px;
 text-transform: uppercase;
 margin-bottom: 24px;
-color: ${({lightText}) => (lightText ? 'red' : "#010606")};
+color: ${({lightText}) => (lightText ? 'red' : '#010606')};
 
 @media screen and (max-width: 480px){
     font-size: 32px;
@@ -107,8 +106,7 @@ export const Img = styled.img`
   width: 100%;
   margin: 0 0 10px 0;
   padding-right: 0;
+  border-radius: 40px;
+  box-shadow: 0 1px 3p rgba(0, 0, 0, 0.2);
 `;
 
-export const naviLink = LinkR`
-Link: ${({skillRequest}) => skillRequest ? "./skillRequest" : "./buddy"};
-`

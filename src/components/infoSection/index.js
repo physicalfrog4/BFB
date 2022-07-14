@@ -39,7 +39,7 @@ const InfoSection = ({
                 <Heading lightText={lightText}>{headLine}</Heading>
                 <BtnWrap>
                   <Button
-                  
+                  to="./skillRequest"
                     smooth={true}
                     duration={500}
                     spy={true}
